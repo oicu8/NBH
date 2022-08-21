@@ -1,0 +1,18 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="de">locale/ntrnbh_de.ts.qm</file>
+        <file alias="en">locale/ntrnbh_en.qm</file>
+        <file alias="en_US">locale/ntrnbh_en_US.qm</file>
+        <file alias="es">locale/ntrnbh_es.qm</file>
+        <file alias="es_ES">locale/ntrnbh_es_ES.qm</file>
+        <file alias="fr_FR">locale/ntrnbh_fr_FR.qm</file>
+        <file alias="hr_HR">locale/ntrnbh_hr_HR.qm</file>
+        <file alias="it">locale/ntrnbh_it.qm</file>
+        <file alias="ko_KR">locale/ntrnbh_ko_KR.qm</file>
+        <file alias="nl">locale/ntrnbh_nl.qm</file>
+        <file alias="pl">locale/ntrnbh_pl.qm</file>
+        <file alias="ru">locale/ntrnbh_ru.qm</file>
+        <file alias="tr">locale/ntrnbh_tr.qm</file>
+        <file alias="zh_CN">locale/ntrnbh_zh_CN.qm</file>
+    </qresource>
+</RCC>

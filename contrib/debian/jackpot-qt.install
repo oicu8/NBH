@@ -1,0 +1,6 @@
+usr/local/bin/ntrnbh-qt usr/bin
+share/pixmaps/ntrnbh32.xpm usr/share/pixmaps
+share/pixmaps/ntrnbh16.xpm usr/share/pixmaps
+share/pixmaps/ntrnbh128.png usr/share/pixmaps
+debian/ntrnbh-qt.desktop usr/share/applications
+debian/ntrnbh-qt.protocol usr/share/kde4/services/

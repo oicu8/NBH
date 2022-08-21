@@ -1,0 +1,81 @@
+policy_module(ntrnbh, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type ntrnbh_t;
+type ntrnbh_exec_t;
+init_daemon_domain(ntrnbh_t, ntrnbh_exec_t)
+
+permissive ntrnbh_t;
+
+type ntrnbh_initrc_exec_t;
+init_script_file(ntrnbh_initrc_exec_t)
+
+type ntrnbh_conf_t;
+files_type(ntrnbh_conf_t)
+
+type ntrnbh_var_lib_t;
+files_type(ntrnbh_var_lib_t)
+
+type ntrnbh_var_run_t;
+files_type(ntrnbh_var_run_t)
+
+type ntrnbh_port_t;
+corenet_port(ntrnbh_port_t)
+
+########################################
+#
+# ntrnbh local policy
+#
+allow ntrnbh_t self:process { fork };
+
+allow ntrnbh_t self:fifo_file rw_fifo_file_perms;
+allow ntrnbh_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(ntrnbh_t, ntrnbh_conf_t, ntrnbh_conf_t)
+manage_files_pattern(ntrnbh_t, ntrnbh_conf_t, ntrnbh_conf_t)
+
+manage_dirs_pattern(ntrnbh_t, ntrnbh_var_lib_t, ntrnbh_var_lib_t)
+manage_files_pattern(ntrnbh_t, ntrnbh_var_lib_t, ntrnbh_var_lib_t)
+files_var_lib_filetrans(ntrnbh_t, ntrnbh_var_lib_t, { dir file })
+
+manage_dirs_pattern(ntrnbh_t, ntrnbh_var_run_t, ntrnbh_var_run_t)
+manage_files_pattern(ntrnbh_t, ntrnbh_var_run_t, ntrnbh_var_run_t)
+
+sysnet_dns_name_resolve(ntrnbh_t)
+corenet_all_recvfrom_unlabeled(ntrnbh_t)
+
+allow ntrnbh_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(ntrnbh_t)
+corenet_tcp_sendrecv_generic_node(ntrnbh_t)
+corenet_tcp_sendrecv_all_ports(ntrnbh_t)
+corenet_tcp_bind_generic_node(ntrnbh_t)
+
+gen_require(`
+    type ntrnbh_port_t;
+')
+allow ntrnbh_t ntrnbh_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type ntrnbh_port_t;
+')
+allow ntrnbh_t ntrnbh_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(ntrnbh_t)
+
+files_read_etc_files(ntrnbh_t)
+
+miscfiles_read_localization(ntrnbh_t)
+
+sysnet_dns_name_resolve(ntrnbh_t)
+
+allow ntrnbh_t ntrnbh_exec_t:file execute_no_trans;
+allow ntrnbh_t self:process setsched;
+corecmd_exec_ls(ntrnbh_t)
+corenet_tcp_connect_http_port(ntrnbh_t)
+dev_read_urand(ntrnbh_t)
+fs_getattr_xattr_fs(ntrnbh_t)
+kernel_read_system_state(ntrnbh_t)

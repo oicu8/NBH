@@ -1,0 +1,3 @@
+usr/local/bin/ntrnbhd usr/bin
+usr/local/bin/ntrnbh-cli usr/bin
+debian/examples/ntrnbh.conf etc/ntrnbh

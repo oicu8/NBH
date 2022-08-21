@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=NeutronBH
+Comment= NTRN P2P Cryptocurrency
+Comment[fr]= NTRN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]= NTRN, eşten eşe kriptografik sanal para birimi
+Exec=ntrnbh-qt %u
+Terminal=false
+Type=Application
+Icon=ntrnbh128
+MimeType=x-scheme-handler/ntrnbh;
+Categories=Office;Finance;
+StartupWMClass=ntrnbh-qt

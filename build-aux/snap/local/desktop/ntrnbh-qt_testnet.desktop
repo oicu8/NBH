@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=PIVX Core
+Comment=PIVX Core QT test network
+GenericName=PIVX Digital Currency QT client testnet network
+Exec=ntrnbh-core.qt-testnet %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/ntrnbh_testnet.png
+MimeType=x-scheme-handler/ntrnbh;
+Categories=X-Office;X-Finance;
+Keywords=internet;ntrnbh;zntrn;tpiv;core;wallet;qt;testnet;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Version=1.0

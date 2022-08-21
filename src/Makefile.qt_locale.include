@@ -1,0 +1,15 @@
+QT_TS = \
+  qt/locale/ntrnbh_de.ts.ts \
+  qt/locale/ntrnhb_en.ts \
+  qt/locale/ntrnhb_en_US.ts \
+  qt/locale/ntrnbh_es.ts \
+  qt/locale/ntrnbh_es_ES.ts \
+  qt/locale/ntrnbh_fr_FR.ts \
+  qt/locale/ntrnbh_hr_HR.ts \
+  qt/locale/ntrnbh_it.ts \
+  qt/locale/ntrnbh_ko_KR.ts \
+  qt/locale/ntrnbh_nl.ts \
+  qt/locale/ntrnbh_pl.ts \
+  qt/locale/ntrn_ru.ts \
+  qt/locale/ntrnbh_tr.ts \
+  qt/locale/ntrnbh_zh_CN.ts
