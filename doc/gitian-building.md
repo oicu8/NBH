@@ -112,7 +112,7 @@ gpg --output ${VERSION}-win-unsigned/$NAME/ntrnbh-win-${VERSION%\.*}-build.asser
 Uploading Signatures
 --------------------
 Make a Pull Request (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs](https://github.com/ntrnbh-project/gitian.sigs/) repository:
+[gitian.sigs](https://github.com/oicu8/gitian.sigs/) repository:
 
 ```bash
 git checkout -b ${VERSION}-not-codesigned

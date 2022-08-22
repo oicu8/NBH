@@ -9,5 +9,5 @@ if ENABLE_QT
 endif
 
 if BUILD_BITCOIN_UTILS
-  dist_man1_MANS+=ntrnbh-qt.1 ntrnbh-tx.1
+  dist_man1_MANS+=ntrnbh-cli.1 ntrnbh-tx.1
 endif

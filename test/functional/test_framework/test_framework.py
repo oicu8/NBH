@@ -108,7 +108,7 @@ class PivxTestFramework():
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
                           help="Don't stop ntrnbhds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__))+"/../../../src"),
-                          help="Source directory containing ntrnbhd/ntrnbh-qt (default: %default)")
+                          help="Source directory containing ntrnbhd/ntrnbh-cli (default: %default)")
         parser.add_option("--cachedir", dest="cachedir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                           help="Directory for caching pregenerated datadirs")
         parser.add_option("--tmpdir", dest="tmpdir", help="Root directory for datadirs")
@@ -127,7 +127,7 @@ class PivxTestFramework():
         parser.add_option("--pdbonfailure", dest="pdbonfailure", default=False, action="store_true",
                           help="Attach a python debugger if test fails")
         parser.add_option("--usecli", dest="usecli", default=False, action="store_true",
-                          help="use ntrnbh-qt instead of RPC for all commands")
+                          help="use ntrnbh-cli instead of RPC for all commands")
         self.add_options(parser)
         (self.options, self.args) = parser.parse_args()
 
@@ -889,7 +889,7 @@ class PivxTestFramework():
                     # Use pk of the input. Ask sk from rpc_conn
                     rawtx = rpc_conn.getrawtransaction('{:064x}'.format(prevout.hash), True)
                     privKeyWIF = rpc_conn.dumpprivkey(rawtx["vout"][prevout.n]["scriptPubKey"]["addresses"][0])
-                # Use the provided privKeyWIF 
+                # Use the provided privKeyWIF
                 # export the corresponding private key to sign block
                 privKey, compressed = wif_to_privkey(privKeyWIF)
                 block_sig_key.set_compressed(compressed)

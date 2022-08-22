@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/ntrnbh-project/gitian.sigs.git
+    git clone https://github.com/oicu8/gitian.sigs.git
     git clone https://github.com/neutroncoin/NeutronBH-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/neutroncoin/NeutronBH.git
@@ -211,7 +211,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/macOS detached signatures:
 
 - Once the Windows/macOS builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [ntrnbh-detached-sigs](https://github.com/ntrnbh-Project/ntrnbh-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [ntrnbh-detached-sigs](https://github.com/oicu8/ntrnbh-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed macOS binary:
 

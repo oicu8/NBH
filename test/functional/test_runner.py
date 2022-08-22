@@ -322,7 +322,7 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
     #Set env vars
     if "BITCOIND" not in os.environ:
         os.environ["BITCOIND"] = build_dir + '/src/ntrnbhd' + exeext
-        os.environ["BITCOINCLI"] = build_dir + '/src/ntrnbh-qt' + exeext
+        os.environ["BITCOINCLI"] = build_dir + '/src/ntrnbh-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -566,7 +566,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `ntrnbh-qt help` (`rpc_interface.txt`).
+    commands per `ntrnbh-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

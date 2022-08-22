@@ -14,7 +14,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ntrnbh-qt and ntrnbhd)
+ * CBaseChainParams defines the base parameters (shared between ntrnbh-cli and ntrnbhd)
  * of a given instance of the ntrnbh system.
  */
 class CBaseChainParams

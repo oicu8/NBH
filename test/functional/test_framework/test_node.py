@@ -71,7 +71,7 @@ class TestNode():
             "-uacomment=testnode%d" % i
         ]
 
-        self.cli = TestNodeCLI(os.getenv("BITCOINCLI", "ntrnbh-qt"), self.datadir)
+        self.cli = TestNodeCLI(os.getenv("BITCOINCLI", "ntrnbh-cli"), self.datadir)
         self.use_cli = use_cli
 
         self.running = False
@@ -238,7 +238,7 @@ class TestNodeCLIAttr:
         return lambda: self(*args, **kwargs)
 
 class TestNodeCLI():
-    """Interface to ntrnbh-qt for an individual node"""
+    """Interface to ntrnbh-cli for an individual node"""
 
     def __init__(self, binary, datadir):
         self.options = []
@@ -248,7 +248,7 @@ class TestNodeCLI():
         self.log = logging.getLogger('TestFramework.bitcoincli')
 
     def __call__(self, *options, input=None):
-        # TestNodeCLI is callable with ntrnbh-qt command-line options
+        # TestNodeCLI is callable with ntrnbh-cli command-line options
         cli = TestNodeCLI(self.binary, self.datadir)
         cli.options = [str(o) for o in options]
         cli.input = input
@@ -267,11 +267,11 @@ class TestNodeCLI():
         return results
 
     def send_cli(self, command=None, *args, **kwargs):
-        """Run ntrnbh-qt command. Deserializes returned string as python object."""
+        """Run ntrnbh-cli command. Deserializes returned string as python object."""
 
         pos_args = [str(arg) for arg in args]
         named_args = [str(key) + "=" + str(value) for (key, value) in kwargs.items()]
-        assert not (pos_args and named_args), "Cannot use positional arguments and named arguments in the same ntrnbh-qt call"
+        assert not (pos_args and named_args), "Cannot use positional arguments and named arguments in the same ntrnbh-cli call"
         p_args = [self.binary, "-datadir=" + self.datadir] + self.options
         if named_args:
             p_args += ["-named"]

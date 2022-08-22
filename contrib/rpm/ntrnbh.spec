@@ -24,18 +24,18 @@ URL:		https://ntrnbh.org/
 Source0:	https://ntrnbh.org/bin/ntrnbh-core-%{version}/ntrnbh-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/contrib/debian/examples/ntrnbh.conf
+Source10:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/contrib/debian/examples/ntrnbh.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/doc/man/ntrnbhd.1
-Source21:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/doc/man/ntrnbh-qt.1
-Source22:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/doc/man/ntrnbh-qt.1
+Source20:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/doc/man/ntrnbhd.1
+Source21:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/doc/man/ntrnbh-cli.1
+Source22:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/doc/man/ntrnbh-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/contrib/rpm/ntrnbh.te
+Source30:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/contrib/rpm/ntrnbh.te
 # Source31 - what about ntrnbh-tx and bench_ntrnbh ???
-Source31:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/contrib/rpm/ntrnbh.fc
-Source32:	https://raw.githubusercontent.com/ntrnbh-project/ntrnbh/v%{version}/contrib/rpm/ntrnbh.if
+Source31:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/contrib/rpm/ntrnbh.fc
+Source32:	https://raw.githubusercontent.com/oicu8/ntrnbh/v%{version}/contrib/rpm/ntrnbh.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

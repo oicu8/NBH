@@ -75,9 +75,9 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("NeutronBH RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  ntrnbh-qt [options] <command> [params]  " + _("Send command to NeutronBH") + "\n" +
-                        "  ntrnbh-qt [options] help                " + _("List commands") + "\n" +
-                        "  ntrnbh-qt [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  ntrnbh-cli [options] <command> [params]  " + _("Send command to NeutronBH") + "\n" +
+                        "  ntrnbh-cli [options] help                " + _("List commands") + "\n" +
+                        "  ntrnbh-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

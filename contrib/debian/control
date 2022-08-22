@@ -46,7 +46,7 @@ Description: peer-to-peer network based digital currency - daemon
  requires 18.5+ GB of space, slowly growing.
  .
  This package provides the daemon, ntrnbhd, and the CLI tool
- ntrnbh-qt to interact with the daemon.
+ ntrnbh-cli to interact with the daemon.
 
 Package: ntrnbh-qt
 Architecture: any

@@ -41,28 +41,28 @@ chmod +x masternodesetup.sh && bash masternodesetup.sh
 
 * Let this run, and when it ask you to install dependencies, if you're not sure press ***y*** and then enter
 
-* It will take some time and then will ask to compile the Daemon, press ***y*** and then enter 
+* It will take some time and then will ask to compile the Daemon, press ***y*** and then enter
 
 * Last thing script will ask you is to provide Masternode Genkey. Copy the one you got previously (createmasternodekey) and press enter.
 
-Remember to do `ntrnbh-qt getblockcount` to check if VPS catching blocks till it synced with chain, if not follow this procedure:
+Remember to do `ntrnbh-cli getblockcount` to check if VPS catching blocks till it synced with chain, if not follow this procedure:
 
-* Go to your wallet-qt and check peers list (tools - peers list) and select one ip from the list. With that ip do the follow command at VPS `ntrnbh-qt addnode "ip" onetry`
+* Go to your wallet-qt and check peers list (tools - peers list) and select one ip from the list. With that ip do the follow command at VPS `ntrnbh-cli addnode "ip" onetry`
 
       Example:
-		  ntrnbh-qt addnode seed01.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed02.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed03.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed04.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed05.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed06.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed07.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed08.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed09.ntrnbh.io onetry
-		  ntrnbh-qt addnode seed10.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed01.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed02.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed03.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed04.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed05.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed06.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed07.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed08.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed09.ntrnbh.io onetry
+		  ntrnbh-cli addnode seed10.ntrnbh.io onetry
 
-    
-* Check now if VPS already downloading blocks with the command `ntrnbh-qt getblockcount`, and if yes give it time now to catch last block number 
+
+* Check now if VPS already downloading blocks with the command `ntrnbh-cli getblockcount`, and if yes give it time now to catch last block number
 
 Do not close your terminal/ command prompt window at this point.
 
@@ -88,9 +88,9 @@ Do not close your terminal/ command prompt window at this point.
 ***Go back to Putty***
 
 ```
-ntrnbh-qt getmasternodestatus
+ntrnbh-cli getmasternodestatus
 ```
 
-You need to get **"status" : 4** 
+You need to get **"status" : 4**
 
 ## Congratulations your NeutronBH node is running

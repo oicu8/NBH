@@ -114,7 +114,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in ntrnbhd anymore. Use the ntrnbh-qt utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in ntrnbhd anymore. Use the ntrnbh-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32

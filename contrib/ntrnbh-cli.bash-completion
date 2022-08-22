@@ -1,9 +1,9 @@
-# bash programmable completion for ntrnbh-qt(1)
+# bash programmable completion for ntrnbh-cli(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# call $ntrnbh-qt for RPC
+# call $ntrnbh-cli for RPC
 _ntrnbh_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
@@ -28,8 +28,8 @@ _ntrnbh_cli() {
     local cur prev words=() cword
     local ntrnbh_cli
 
-    # save and use original argument to invoke ntrnbh-qt for -help, help and RPC
-    # as ntrnbh-qt might not be in $PATH
+    # save and use original argument to invoke ntrnbh-cli for -help, help and RPC
+    # as ntrnbh-cli might not be in $PATH
     ntrnbh_cli="$1"
 
     COMPREPLY=()
@@ -143,7 +143,7 @@ _ntrnbh_cli() {
             ;;
     esac
 } &&
-complete -F _ntrnbh_cli ntrnbh-qt
+complete -F _ntrnbh_cli ntrnbh-cli
 
 # Local variables:
 # mode: shell-script

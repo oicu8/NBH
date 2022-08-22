@@ -71,7 +71,7 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += ntrnbh-qt ntrnbh-tx
+  bin_PROGRAMS += ntrnbh-cli ntrnbh-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -483,7 +483,7 @@ if GLIBC_BACK_COMPAT
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between ntrnbh-qt and ntrnbh-qt
+# cli: shared between ntrnbh-cli and ntrnbh-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -518,7 +518,7 @@ ntrnbhd_LDADD = \
 
 ntrnbhd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# ntrnbh-qt binary #
+# ntrnbh-cli binary #
 ntrnbh_cli_SOURCES = ntrnbh-cli.cpp
 ntrnbh_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 ntrnbh_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
