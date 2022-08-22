@@ -193,14 +193,14 @@ public:
 */
         // /////////////////////////////////////////////////////////////////
 
-        genesis = CreateGenesisBlock(1393221600, 164482, 0x1e0fffff, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1429352955, 164482, 0x1e0fffff, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000036366895115eba0d9a314a3fc10a3972b82db5413d79e98a4aba1927e46"));
         assert(genesis.hashMerkleRoot == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;
-        consensus.posLimitV1 = ~UINT256_ZERO >> 24;
+        consensus.posLimitV1 = ~UINT256_ZERO >> 20;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days
         consensus.nBudgetFeeConfirmations = 6;      // Number of confirmations for the finalization fee
@@ -335,7 +335,7 @@ public:
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;
-        consensus.posLimitV1 = ~UINT256_ZERO >> 24;
+        consensus.posLimitV1 = ~UINT256_ZERO >> 20;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days
         consensus.nBudgetFeeConfirmations = 6;      // Number of confirmations for the finalization fee
@@ -463,7 +463,7 @@ public:
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;
-        consensus.posLimitV1 = ~UINT256_ZERO >> 24;
+        consensus.posLimitV1 = ~UINT256_ZERO >> 20;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days
         consensus.nBudgetFeeConfirmations = 6;      // Number of confirmations for the finalization fee
