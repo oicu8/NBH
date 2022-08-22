@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ntrnbh_de.ts TERMINISTICMINT_H
-#define ntrnbh_de.ts TERMINISTICMINT_H
+#ifndef  ntrnbh_de.ts TERMINISTICMINT_H
+#define  ntrnbh_de.ts TERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
