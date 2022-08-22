@@ -1,5 +1,5 @@
 QT_TS = \
-  qt/locale/ntrnbh_de.ts.ts \
+  qt/locale/ntrnbh_de.ts \
   qt/locale/ntrnhb_en.ts \
   qt/locale/ntrnhb_en_US.ts \
   qt/locale/ntrnbh_es.ts \
