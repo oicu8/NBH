@@ -37,7 +37,7 @@ def determine_db_dir():
     if platform.system() == "Darwin":
         return os.path.expanduser("~/Library/Application Support/PIVX/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "PIVX")
+        return os.path.join(os.environ['APPDATA'], "ntrnbh")
     return os.path.expanduser("~/.ntrnbh")
 
 def read_bitcoin_config(dbdir):

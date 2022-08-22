@@ -8,7 +8,7 @@
 # /etc/ntrnbh/ntrnbh.conf
 
 [Unit]
-Description=PIVX daemon
+Description=ntrnbh daemon
 After=network.target
 
 [Service]

@@ -2,9 +2,9 @@
 
 [Desktop Entry]
 Encoding=UTF-8
-Name=PIVX Core
-Comment=PIVX Core QT main network
-GenericName=PIVX Digital Currency QT client main network
+Name=ntrnbh Core
+Comment=ntrnbh Core QT main network
+GenericName=ntrnbh Digital Currency QT client main network
 Exec=ntrnbh-core.qt %u
 Terminal=false
 Type=Application
