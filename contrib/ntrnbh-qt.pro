@@ -642,7 +642,7 @@ RESOURCES += src/qt/ntrnbh.qrc src/qt/ntrnbh_locale.qrc
 
 TRANSLATIONS += src/qt/locale/ntrnbh_bg.ts \
                 src/qt/locale/ntrnbh_de.ts \
-                src/qt/locale/ntrnhb_en.ts \
+                src/qt/locale/ntrnbh_en.ts \
                 src/qt/locale/ntrnbh_es.ts \
                 src/qt/locale/ntrnbh_fi.ts \
                 src/qt/locale/ntrnbh_fr.ts \

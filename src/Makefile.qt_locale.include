@@ -1,7 +1,7 @@
 QT_TS = \
   qt/locale/ntrnbh_de.ts \
-  qt/locale/ntrnhb_en.ts \
-  qt/locale/ntrnhb_en_US.ts \
+  qt/locale/ntrnbh_en.ts \
+  qt/locale/ntrnbh_en_US.ts \
   qt/locale/ntrnbh_es.ts \
   qt/locale/ntrnbh_es_ES.ts \
   qt/locale/ntrnbh_fr_FR.ts \
