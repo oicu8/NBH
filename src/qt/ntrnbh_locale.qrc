@@ -1,6 +1,6 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/translations">
-        <file alias="de">locale/ntrnbh_de.ts.qm</file>
+        <file alias="de">locale/ntrnbh_de.qm</file>
         <file alias="en">locale/ntrnbh_en.qm</file>
         <file alias="en_US">locale/ntrnbh_en_US.qm</file>
         <file alias="es">locale/ntrnbh_es.qm</file>
