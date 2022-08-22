@@ -56,7 +56,7 @@ The NeutronBH repo's [root README](/README.md) contains relevant information on 
 
 ### Resources
 * Discuss on the [NeutronBH Homepage](https://ntrnbh.io/).
-* Join the [NeutronBH Discord](https://discord.gg/uTar2Sd).
+* Join the [NeutronBH Discord](https://discord.gg/).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
