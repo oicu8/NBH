@@ -53,7 +53,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "April 18th 2015 Global stocks nosedive";
-    const CScript genesisOutputScript = CScript() << ParseHex("04e209a299d9b1483b42c1e827975054b276188cb1b86943ebf9673a955b4bfb466d6ef5167539deac570ebb9df4eb5b256a9dd2a5a9bd44399e16d9bf6fae46c2") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("d01f952e1090a5a72a3eda261083256596ccc192935ae1454c2bafd03b09e6ed11811be9f3a69f5783bbbced8c6a0c56621f42c2d19087416facf2f13cc7ed7159d1c5253119612b8449f0c7f54248e382d30ecab1928dbf075c5425dcaee1a819aa13550e0f3227b8c685b14e0eae094d65d8a610a6f49fff8145259d1187e4c6a472fa5868b2b67f957cb74b787f4311dbc13c97a2ca13acdb876ff506ebecbb904548c267d68868e07a32cd9ed461fbc2f920e9940e7788fed2e4817f274df5839c2196c80abe5c486df39795186d7bc86314ae1e8342f3c884b158b4b05b4302754bf351477d35370bad6639b2195d30006b77bf3dbb28b848fd9ecff5662bf39dde0c974e83af51b0d3d642d43834827b8c3b189065514636b8f2a59c42ba9b4fc4975d4827a5d89617a3873e4b377b4d559ad165748632bd928439cfbc5a8ef49bc2220e0b15fb0aa302367d5e99e379a961c1bc8cf89825da5525e3c8f14d7d8acca2fa9c133a2176ae69874d8b1d38b26b9c694e211018005a97b40848681b9dd38feb2de141626fb82591aad20dc629b2b6421cef1227809551a0e4e943ab99841939877f18f2d9c0addc93cf672e26b02ed94da3e6d329e8ac8f3736eebbf37bb1a21e5aadf04ee8e3b542f876aa88b2adf2608bd86329b7f7a56fd0dc1c40b48188731d11082aea360c62a0840c2db3dad7178fd7e359317ae081") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -193,15 +193,15 @@ public:
 */
         // /////////////////////////////////////////////////////////////////
 
-        genesis = CreateGenesisBlock(1429352955, 164482, 0x1e0fffff, 1, 0 * COIN);
-        consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000036366895115eba0d9a314a3fc10a3972b82db5413d79e98a4aba1927e46"));
-        assert(genesis.hashMerkleRoot == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
+        genesis = CreateGenesisBlock(1429352955, 92070, 0x1e0fffff, 1, 0 * COIN);
+        consensus.hashGenesisBlock = genesis.GetHash("0x0000036366895115eba0d9a314a3fc10a3972b82db5413d79e98a4aba1927e46");
+        assert(consensus.hashGenesisBlock == uint256("0x0000036366895115eba0d9a314a3fc10a3972b82db5413d79e98a4aba1927e46"));
+        assert(genesis.hashMerkleRoot == uint256("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;
-        consensus.posLimitV1 = ~UINT256_ZERO >> 20;
-        consensus.posLimitV2 = ~UINT256_ZERO >> 20;
+        consensus.powLimit   = ~UINT256(0) >> 20);
+        consensus.posLimitV1 = ~UINT256(0) >> 20);
+        consensus.posLimitV2 = ~UINT256(0) >> 20);
         consensus.nBudgetCycleBlocks = 30 * 24 * 60;       // approx. 1 every 30 days
         consensus.nBudgetFeeConfirmations = 6;      // Number of confirmations for the finalization fee
         consensus.nCoinbaseMaturity = 80;
@@ -330,7 +330,7 @@ public:
 
         genesis = CreateGenesisBlock(1656793445, 18745, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x3c81f5a39588ff6112bf55343ef61b998098a3eca0cabfb6b3dbd908c2c3345a"));
         assert(genesis.hashMerkleRoot == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -458,7 +458,7 @@ public:
 
         genesis = CreateGenesisBlock(1656793446, 582448, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x3c81f5a39588ff6112bf55343ef61b998098a3eca0cabfb6b3dbd908c2c3345a"));
         assert(genesis.hashMerkleRoot == uint256S("0x80251aff18129581f06b3036bda4d571b909389699290deced973ebb580d11c5"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
