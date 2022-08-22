@@ -650,7 +650,7 @@ TRANSLATIONS += src/qt/locale/ntrnbh_bg.ts \
                 src/qt/locale/ntrnbh_ja.ts \
                 src/qt/locale/ntrnbh_pl.ts \
                 src/qt/locale/ntrnbh_pt.ts \
-                src/qt/locale/ntrn_ru.ts \
+                src/qt/locale/ntrnbh_ru.ts \
                 src/qt/locale/ntrnbh_sk.ts \
                 src/qt/locale/ntrnbh_sv.ts \
                 src/qt/locale/ntrnbh_vi.ts \

@@ -10,6 +10,6 @@ QT_TS = \
   qt/locale/ntrnbh_ko_KR.ts \
   qt/locale/ntrnbh_nl.ts \
   qt/locale/ntrnbh_pl.ts \
-  qt/locale/ntrn_ru.ts \
+  qt/locale/ntrnbh_ru.ts \
   qt/locale/ntrnbh_tr.ts \
   qt/locale/ntrnbh_zh_CN.ts
